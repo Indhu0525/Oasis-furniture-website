@@ -1,0 +1,18 @@
+@mixin fs-fw($size: 18px,$fw:300) {
+  font-size: $size;
+  font-weight:$fw;
+ }
+@mixin fs-color-fw($size:18px,$colorr:#000000,$fw:300){
+  font-size:$size;
+  color:$colorr;
+  font-weight: $fw;
+}
+ @mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin padding-categories($padding-t:20px,$padding-b:20px){
+  padding-top:$padding-t;
+  padding-bottom: $padding-b;
+}

@@ -1,0 +1,21 @@
+@import '../themes/colors';
+@import '../utils/mixins';
+@import '../components/buttons';
+
+.header{
+.nav{
+    .nav-item{
+        .nav-link{
+            color:$nav-text;
+            @include fs-fw($size:14px,$fw:500);
+        }
+       
+    }
+}
+.button{
+    @include button;
+}
+.button2{
+    @include button2;
+}
+}

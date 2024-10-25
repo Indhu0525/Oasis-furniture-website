@@ -1,0 +1,10 @@
+@import './scss/themes/colors';
+@import './scss/layout/header';
+@import './scss/utils/mixins';
+@import './scss/components/buttons';
+@import './scss/layout/main';
+
+#productGrid .product-card {
+    flex: 1 1 200px; /* Allows each card to grow and shrink */
+    max-width: 220px; /* Sets a max width for larger screens */
+  }

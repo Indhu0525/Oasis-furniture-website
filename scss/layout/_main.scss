@@ -1,0 +1,35 @@
+@import '../themes/colors';
+@import '../utils/mixins';
+@import '../components/buttons';
+
+.main-text{
+    p{
+        @include fs-color-fw($size:14px,$colorr:#000000,$fw:500);
+    }
+    h2{
+        @include fs-color-fw($size:40px,$colorr:#000000,$fw:700);
+    }
+  h6{
+    @include fs-color-fw($size:18px,$colorr:#000000,$fw:300);
+  }
+  .categories{
+        h4{
+            @include fs-color-fw($size:30px,$colorr:$nav-text,$fw:700);
+        }
+        .containers{
+            background-color: $cart-bg;
+        }
+        .button3{
+            @include button3;
+            border:1px solid $shopnow-btn;
+        }
+        .container2{
+            @extend .containers;
+            @include padding-categories($padding-t:40px,$padding-b:30px)
+        }
+        .button4{
+            @include button4;
+            border:1px solid $shopnow-btn;
+        }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../themes/colors';
+@import '../utils/mixins';
+
+
+@mixin button {
+    background-color: $cart-bg;
+    cursor: pointer;
+    @include center-flex;
+    // &:hover {
+    //   background-color: darken($primary-color, 10%);
+    // }
+    span {
+        font-size: 0.7rem;
+        padding: 2px 4px;
+        top: 8px;
+        left: 91%;
+    }
+}
+
+@mixin button2 {
+    @include button;
+    background-color: $get-startedbg;
+    color: $white-bg;
+}
+@mixin button4 {
+    @include button2;
+    background-color: $get-startedbg;
+    color: $white-bg;
+}
+@mixin button3{
+    @include button2;
+    background-color: transparent;
+    color:$black;
+    border:1px solid $get-startedbg;
+}

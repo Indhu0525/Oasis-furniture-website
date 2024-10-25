@@ -1,0 +1,103 @@
+.header .nav .nav-item .nav-link {
+  color: #2E2F33;
+  font-size: 14px;
+  font-weight: 500;
+}
+.header .button {
+  background-color: #F8F7FB;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .button span {
+  font-size: 0.7rem;
+  padding: 2px 4px;
+  top: 8px;
+  left: 91%;
+}
+.header .button2 {
+  background-color: #F8F7FB;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7C71DF;
+  color: white;
+}
+.header .button2 span {
+  font-size: 0.7rem;
+  padding: 2px 4px;
+  top: 8px;
+  left: 91%;
+}
+
+.main-text p {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+}
+.main-text h2 {
+  font-size: 40px;
+  color: #000000;
+  font-weight: 700;
+}
+.main-text h6 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 300;
+}
+.main-text .categories h4 {
+  font-size: 30px;
+  color: #2E2F33;
+  font-weight: 700;
+}
+.main-text .categories .containers, .main-text .categories .container2 {
+  background-color: #F8F7FB;
+}
+.main-text .categories .button3 {
+  background-color: #F8F7FB;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7C71DF;
+  color: white;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #7C71DF;
+  border: 1px solid #686A74;
+}
+.main-text .categories .button3 span {
+  font-size: 0.7rem;
+  padding: 2px 4px;
+  top: 8px;
+  left: 91%;
+}
+.main-text .categories .container2 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.main-text .categories .button4 {
+  background-color: #F8F7FB;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7C71DF;
+  color: white;
+  background-color: #7C71DF;
+  color: white;
+  border: 1px solid #686A74;
+}
+.main-text .categories .button4 span {
+  font-size: 0.7rem;
+  padding: 2px 4px;
+  top: 8px;
+  left: 91%;
+}
+
+#productGrid .product-card {
+  flex: 1 1 200px; /* Allows each card to grow and shrink */
+  max-width: 220px; /* Sets a max width for larger screens */
+}/*# sourceMappingURL=main.css.map */
