@@ -31,5 +31,20 @@
             @include button4;
             border:1px solid $shopnow-btn;
         }
+        .button5{
+         background-color: $cart-bg;
+        }
+        #productGrid .product-card {
+            flex: 1 1 200px;
+            max-width: 250px;
+        }
+        
+        /* For small screens (up to 576px), make the product card take full width */
+        @media (max-width: 576px) {
+            #productGrid .product-card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
   }
 }

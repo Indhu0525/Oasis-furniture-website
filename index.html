@@ -2,642 +2,609 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>furniture-website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="./main.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts/dist/apexcharts.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
-    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../Oasis-furniture-website/products.js" rel="">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>furniture-website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="./main.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts/dist/apexcharts.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../Oasis-furniture-website/products.js" rel="">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="main sm:mx-2 md:mx-10 lg:mx-20">
-        <header>
-            <div class="header d-flex justify-content-between align-items-center  py-7 ">
-                <div class="header-text">
-                    <img src="./images/Oasis.png">
-                </div>
-                <div class="hidden md:flex">
-                    <ul class="nav ">
-                        <li class="nav-item">
-                            <a class="nav-link active " href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Categories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Blog</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="d-flex justify-content-between align-items-center gap-3">
-                    <button type="button" class=" button p-3 position-relative rounded-circle">
-                        <img src="./images/cart.png">
-                        <span class="position-absolute  translate-middle badge rounded-pill bg-danger">
-                            3
-                        </span>
-                    </button>
-                    <button type="button" class="button2 px-4 py-3 rounded-pill font-medium gap-3">
-                        Get Started!
-                        <img src="./images/arrow-right.png">
-                    </button>
-                </div>
-            </div>
-        </header>
-        <main>
-    <div class="main-text mt-10">
+  <div class="main mx-3 mx-md-10 mx-lg-20">
+    <header>
+      <div class="header d-flex justify-content-between align-items-center py-7">
+        <div class="header-text">
+          <img src="./images/Oasis.png">
+        </div>
+        <div class="d-none d-md-block " id="navbarToggleExternalContent">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-between align-items-center gap-3">
+          <button type="button" class="button p-3 position-relative rounded-circle">
+            <img src="./images/cart.png">
+            <span class="position-absolute translate-middle badge rounded-pill bg-danger">3</span>
+          </button>
+          <button type="button" class="d-none d-md-flex button2 px-4 py-3 rounded-pill font-medium gap-3">
+            Get Started!
+            <img src="./images/arrow-right.png">
+          </button>
+          <button class="navbar-toggler border-0 d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12.5A.5.5 0 0 1 3 12h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 8h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 4h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </header>
+    <main>
+      <div class="main-text mt-10">
         <div class="text-center">
-            <p>FURNITURE STORE</p>
-            <h2 class="mt-3">Discover the Artistry of Modern<br> Contemporary Furniture</h2>
-            <h6 class="mt-3">Experience the elegance and functionality of cutting-edge design where luxury meets innovation in every piece for ultimate relaxation</h6>
-            <div class="d-flex justify-content-center my-12">
-                <img src="./images/sofa.png"class="w-full">
-            </div>
+          <p>FURNITURE STORE</p>
+          <h2 class="mt-3">Discover the Artistry of Modern<br> Contemporary Furniture</h2>
+          <h6 class="mt-3">Experience the elegance and functionality of cutting-edge design where luxury meets
+            innovation in every piece for ultimate relaxation</h6>
+          <div class="d-flex justify-content-center my-12">
+            <img src="./images/sofa.png" class="w-full">
+          </div>
         </div>
         <div class="categories">
-        <h4>Categories</h4>
-        <div class="containers text-center mt-5 w-full">
+          <h4>Categories</h4>
+          <div class="containers text-center mt-5 w-full">
             <div class="row">
               <div class="col-md-4 d-flex flex-column align-items-center gap-10  justify-content-center">
                 <h4>Sitting Room</h4>
-                <button type="button" class="button3 px-4 py-3 rounded-pill font-medium gap-1 d-flex align-items-center">
+                <button type="button"
+                  class="button3 px-4 py-3 rounded-pill font-medium gap-1 d-flex align-items-center">
                   Shop Now
                   <img src="./images/arrow-right -black.png" alt="Arrow Icon" class="ms-2">
                 </button>
               </div>
-          
-              <div class="col-md-8">
-                <img src="./images/sitting-sofa.png" class=" w-full"> 
+
+              <div class="col-md-8 ">
+                <img src="./images/sitting-sofa.png" class=" w-full">
               </div>
             </div>
           </div>
           <div class="container2 text-center mt-5 w-full">
             <div class="row">
               <div class="col-lg-6 d-flex align-items-end justify-content-center pl-8">
-                <div class="d-flex flex-column gap-3   justify-content-center">
-                    <h4>Accessories</h4>
-                    <button type="button" class="button3 px-3 py-3 rounded-pill font-medium gap-1 d-flex align-items-center">
-                      Shop Now
-                      <img src="./images/arrow-right -black.png" alt="Arrow Icon" class="ms-2">
-                    </button>
-                  </div>
-              
-                  <div class="">
-                    <img src="./images/Nightstand .png" class=" w-full"> 
-                  </div>
-              </div>
-          
-              <div class="col-lg-6 d-flex align-items-end justify-content-center pl-8">
-                <div class="d-flex flex-column gap-3   justify-content-center">
-                    <h4 class="pr-10">Kitchen</h4>
-                    <button type="button" class="button3 px-3 py-3 rounded-pill font-medium gap-1 d-flex align-items-center">
-                        Shop Now
-                        <img src="./images/arrow-right -black.png" alt="Arrow Icon" class="ms-2">
-                      </button>
-                  </div>
-              
-                  <div class="">
-                    <img src="./images/kettle.png" class=" w-full"> 
-                  </div>
+                <div class="d-flex flex-column gap-3   justify-content-center p-3">
+                  <h4>Accessories</h4>
+                  <button type="button"
+                    class="button3 px-3 py-3 rounded-pill font-medium gap-1 d-flex align-items-center">
+                    Shop Now
+                    <img src="./images/arrow-right -black.png" alt="Arrow Icon" class="ms-2">
+                  </button>
+                </div>
+
+                <div class="">
+                  <img src="./images/Nightstand .png" class=" w-full">
+                </div>
               </div>
 
-              
+              <div class="col-lg-6 d-flex align-items-end justify-content-center pl-8">
+                <div class="d-flex flex-column gap-3   justify-content-center p-3">
+                  <h4 class="pr-10">Kitchen</h4>
+                  <button type="button"
+                    class="button3 px-3 py-3 rounded-pill font-medium gap-1 d-flex align-items-center">
+                    Shop Now
+                    <img src="./images/arrow-right -black.png" alt="Arrow Icon" class="ms-2">
+                  </button>
+                </div>
+
+                <div class="">
+                  <img src="./images/kettle.png" class=" w-full">
+                </div>
+              </div>
+
+
             </div>
-            
+
           </div>
           <div class="containers text-center mt-5 w-full">
             <div class="row">
               <div class="col-md-4 d-flex flex-column align-items-center gap-3  justify-content-center">
                 <h4>Bedroom</h4>
-                <button type="button" class="button3 px-4 py-3 rounded-pill font-medium gap-1 d-flex align-items-center">
+                <button type="button"
+                  class="button3 px-4 py-3 rounded-pill font-medium gap-1 d-flex align-items-center">
                   Shop Now
                   <img src="./images/arrow-right -black.png" alt="Arrow Icon" class="ms-2">
                 </button>
               </div>
-          
+
               <div class="col-md-6 d-flex justify-content-end pr-8 ">
-                <img src="./images/bookstand.png" > 
+                <img src="./images/bookstand.png">
               </div>
             </div>
           </div>
         </div>
-            <div class="categories">
-              <h4>Categories</h4>
-              <div class="m-0 p-0">
-                <div class="d-flex flex-wrap justify-content-start" id="productGrid">
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/leathersofa.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Faux Leather Sofa Couch</p>
-                        <p class="m-0">$129</p>
-                      </div>
-                    </div>
+        <div class="categories">
+          <h4>Categories</h4>
+          <div class="m-0 p-0">
+            <div class="d-flex flex-wrap justify-content-start" id="productGrid">
+              <div class="product-card p-2 ">
+                <div class="product">
+                  <img src="./images/leathersofa.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Faux Leather Sofa Couch</p>
+                    <p class="m-0">$129</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/accentchair.png" alt="Product 2" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2 ">
+                <div class="product">
+                  <img src="./images/accentchair.png" alt="Product 2" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/flowervase.png" alt="Product 3" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Ceramic Flower Vase</p>
-                        <p class="m-0">$8</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/flowervase.png" alt="Product 3" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Ceramic Flower Vase</p>
+                    <p class="m-0">$8</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/fabricaccent.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/fabricaccent.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/woodenaccentchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/woodenaccentchair.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/ceramiclamp.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/ceramiclamp.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/fabricaccentchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/fabricaccentchair.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/woodenchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/woodenchair.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/compactsofa.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/compactsofa.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/modernchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/modernchair.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/plantpot.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/plantpot.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/rounddhillchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/rounddhillchair.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/roundmarble.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/roundmarble.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/rustingvase.png" alt="Product 1" class="img-fluid">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/luxeduosofa.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/rustingvase.png" alt="Product 1" class="img-fluid">
+                  <p class="m-0">Boucle Accent Chair</p>
+                  <p class="m-0">$44</p>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/luxeduosofa.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/barstool.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/barstool.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/armchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/armchair.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/flutedchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/flutedchair.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/terramarble.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/terramarble.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/luna chair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/luna chair.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/fabricaccent.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="product-card p-2">
+                <div class="product">
+                  <img src="./images/fabricaccent.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
+                </div>
+              </div>
 
-                  <!--hidden products -->
-                  <div class="product-card p-2 d-none">
-                    <div class="product">
-                      <img src="./images/accentchair.png" alt="Product 2" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
+              <!--hidden products -->
+              <div class="product-card p-2 d-none">
+                <div class="product">
+                  <img src="./images/accentchair.png" alt="Product 2" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
                   </div>
-                  <div class="product-card p-2 d-none">
-                    <div class="product">
-                      <img src="./images/fabricaccent.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2 d-none">
-                    <div class="product">
-                      <img src="./images/woodenaccentchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center mt-16 flex-column align-items-center">
-                  <p>Showing 20 of 48 results</p>
-                <div class="progress" style="height: 2px; width:29%;">
-                  <div class="progress-bar bg-black" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
-                <div class="d-flex justify-content-center mt-4">
-                  <button type="button" class="button3 px-4 py-2 rounded-pill font-medium gap-1 d-flex align-items-center"id="showMoreBtn">
-                    Show more
-                  </button>
+              <div class="product-card p-2 d-none">
+                <div class="product">
+                  <img src="./images/fabricaccent.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
+                  </div>
                 </div>
               </div>
-              <script src="products.js"></script>
+              <div class="product-card p-2 d-none">
+                <div class="product">
+                  <img src="./images/woodenaccentchair.png" alt="Product 1" class="img-fluid">
+                  <div class="d-flex justify-content-between py-3 align-items-center">
+                    <p class="m-0">Boucle Accent Chair</p>
+                    <p class="m-0">$44</p>
+                  </div>
+                </div>
+              </div>
             </div>
-
-
-
-
-
-            <div class="categories mt-16 pt-8">
-              <h4>Design inspiration and modern home ideas</h4>
-              <div class="d-flex justify-content-between align-items-center my-8">
-                <button type="button" class="button4 px-4 py-2 rounded-pill font-medium gap-3">
-                  All
+            <div class="d-flex justify-content-center mt-16 flex-column align-items-center">
+              <p>Showing 20 of 48 results</p>
+              <div class="progress" style="height: 2px; width:29%;">
+                <div class="progress-bar bg-black" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+              <button type="button" class="button3 px-4 py-2 rounded-pill font-medium gap-1 d-flex align-items-center"
+                id="showMoreBtn">
+                Show more
               </button>
-              </div>
-           
-              <div class="m-0 p-0">
-                <div class="d-flex flex-wrap justify-content-start" id="productGrid">
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/leathersofa.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Faux Leather Sofa Couch</p>
-                        <p class="m-0">$129</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/accentchair.png" alt="Product 2" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/flowervase.png" alt="Product 3" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Ceramic Flower Vase</p>
-                        <p class="m-0">$8</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/fabricaccent.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/woodenaccentchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/ceramiclamp.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/fabricaccentchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/woodenchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/compactsofa.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/modernchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/plantpot.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/rounddhillchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/roundmarble.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/rustingvase.png" alt="Product 1" class="img-fluid">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/luxeduosofa.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/barstool.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/armchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/flutedchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/terramarble.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/luna chair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2">
-                    <div class="product">
-                      <img src="./images/fabricaccent.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
+            </div>
+          </div>
+          <script src="products.js"></script>
+        </div>
+        <div class="categories mt-16 pt-8">
+          <h4>Design inspiration and modern home ideas</h4>
+          <div class="d-flex gap-4 align-items-center my-8 flex-wrap">
+            <button type="button" class="button4 px-4 py-2 rounded-pill font-medium gap-3">
+              All
+            </button>
+            <button type="button" class="button5 lg:px-6 px-8 py-2 rounded-pill font-medium gap-3">
+              Bedroom
+            </button>
+            <button type="button" class="button5 lg:px-6 px-8 py-2 rounded-pill font-medium gap-3">
+              Living room
+            </button>
+            <button type="button" class="button5 lg:px-6 px-8 py-2 rounded-pill font-medium gap-3">
+              Kitchen
+            </button>
+            <button type="button" class="button5 lg:px-6 px-8 py-2 rounded-pill font-medium gap-3">
+              Workspace
+            </button>
+            <button type="button" class="button5 lg:px-6 px-8 py-2 rounded-pill font-medium gap-3">
+              Outdoor
+            </button>
+            <button type="button" class="button5 lg:px-6 px-8 py-2 rounded-pill font-medium gap-3">
+              Bathroom
+            </button>
+            <button type="button" class="button5 lg:px-6 px-8 py-2 rounded-pill font-medium gap-3">
+              Home office
+            </button>
+            <button type="button" class="button5 lg:px-6 px-8 py-2 rounded-pill font-medium gap-3">
+              Dining
+            </button>
 
-                  <!--hidden products -->
-                  <div class="product-card p-2 d-none">
-                    <div class="product">
-                      <img src="./images/accentchair.png" alt="Product 2" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2 d-none">
-                    <div class="product">
-                      <img src="./images/fabricaccent.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-card p-2 d-none">
-                    <div class="product">
-                      <img src="./images/woodenaccentchair.png" alt="Product 1" class="img-fluid">
-                      <div class="d-flex justify-content-between py-3 align-items-center">
-                        <p class="m-0">Boucle Accent Chair</p>
-                        <p class="m-0">$44</p>
-                      </div>
-                    </div>
-                  </div>
+          </div>
+
+          <div class="m-0 p-0">
+            <div class=" m-0 p-0">
+              <div class="row">
+                <div class="col-md-4 col-12 mb-4 mb-lg-0">
+                  <img src="./images/Gallery-Image.png" class="w-100 shadow-1-strong rounded mb-4" />
+
+                  <img src="./images/Gallery-Image (3).png" class="w-100 shadow-1-strong rounded mb-4" />
+                  <img src="./images/Gallery-Image (6).png" class="w-100 shadow-1-strong rounded mb-4" />
+
+                  <img src="./images/Gallery-Image.png" class="w-100 shadow-1-strong rounded mb-4 d-none more-images" />
+
                 </div>
-                <div class="d-flex justify-content-center mt-16 flex-column align-items-center">
-                  <p>Showing 20 of 48 results</p>
-                <div class="progress" style="height: 2px; width:29%;">
-                  <div class="progress-bar bg-black" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+
+                <div class="col-md-4 col-12  mb-4 mb-lg-0">
+                  <img src="./images/Gallery-Image (1).png" class="w-100 shadow-1-strong rounded mb-4" />
+
+                  <img src="./images/Gallery-Image (4).png" class="w-100 shadow-1-strong rounded mb-4" />
+                  <img src="./images/Gallery-Image (7).png" class="w-100 shadow-1-strong rounded mb-4" />
+                  <img src="./images/Gallery-Image (1).png"
+                    class="w-100 shadow-1-strong rounded mb-4 d-none more-images" />
                 </div>
+
+                <div class="col-md-4 col-12  mb-lg-0">
+                  <img src="./images/Gallery-Image (2).png" class="w-100 shadow-1-strong rounded mb-4" />
+                  <img src="./images/Gallery-Image (5).png" class="w-100 shadow-1-strong rounded mb-4" />
+                  <img src="./images/Gallery-Image (8).png" class="w-100 shadow-1-strong rounded mb-4" />
+                  <img src="./images/Gallery-Image (2).png"
+                    class="w-100 shadow-1-strong rounded mb-4 d-none more-images" />
+                </div>
+
+
               </div>
-                <div class="d-flex justify-content-center mt-4">
-                  <button type="button" class="button3 px-4 py-2 rounded-pill font-medium gap-1 d-flex align-items-center"id="showMoreBtn">
-                    Show more
-                  </button>
-                </div>
-              </div>
-              <script src="products.js"></script>
             </div>
 
-
-
-            <div id="carouselExampleControls" class="carousel slide bg-gray-200" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <button type="button" class="button4 px-4 py-2 rounded-pill font-medium gap-3">
-                    All
+            <div class="d-flex justify-content-center mt-16 flex-column align-items-center">
+              <p>Showing 20 of 48 results</p>
+              <div class="progress" style="height: 2px; width:29%;">
+                <div class="progress-bar bg-black" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+              <button type="button" class="button3 px-4 py-2 rounded-pill font-medium gap-1 d-flex align-items-center"
+                id="showMoreBtN">
+                Show more
+              </button>
+            </div>
+          </div>
+          <script src="./gallery.js"></script>
+        </div>
+        <div class="categories mt-16 pt-8 mb-12">
+          <h4>We have got the answers to your questions</h4>
+          <div class="accordion mt-5" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item border-bottom border-0">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button bg-transparent shadow-none border-0 gap-5 font-semibold text-lg" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  <span>01 </span>
+                  <h5>What types of furniture do you offer?</h5>
                 </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body border-0 ml-16">
+                  We offer a wide range of contemporary furniture including sofas, chairs, tables, beds, storage solutions, and outdoor furniture. Our collection is designed to suit modern aesthetics and functional needs.
                 </div>
-                <div class="carousel-item">
-                 
-                </div>
-               
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
             </div>
-        </main>
+            <div class="accordion-item border-bottom border-0">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed bg-transparent shadow-none gap-5 font-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  <span>02 </span>
+                  <h5>Do you offer international shipping?</h5>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body border-0 ml-16">
+                  We offer a wide range of contemporary furniture including sofas, chairs, tables, beds, storage solutions, and outdoor furniture. Our collection is designed to suit modern aesthetics and functional needs.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-bottom border-0">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed bg-transparent shadow-none gap-5 font-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  <span>03 </span>
+                  <h5>What is your return policy?</h5>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body border-0 ml-16">
+                  We offer a wide range of contemporary furniture including sofas, chairs, tables, beds, storage solutions, and outdoor furniture. Our collection is designed to suit modern aesthetics and functional needs.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item border-bottom border-0">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button class="accordion-button collapsed bg-transparent shadow-none gap-5 font-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  <span>03 </span>
+                  <h5>What payment methods do you accept?</h5>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body border-0 ml-16">
+                  We accept major credit cards (Visa, MasterCard, American Express), PayPal, and financing options through Affirm. All transactions are secure and encrypted.
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+    </main>
+
+
+  </div>
+      <!-- Footer -->
+<footer class="footer text-center text-lg-start  text-muted">
+
+  <section class="">
+    <div class="container text-center text-md-start ">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-4 col-xl-3  mb-md-0 mb-4 d-flex align-items-center ">
+          <!-- Content -->
+           <div class="d-flex justify-content-center justify-content-lg-between p-4">
+    <img src="./images/Oasis (1).png">
+  </div> 
+        </div>
     </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="container  text-center text-md-start ">
+  
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-12  col-xl-2 mx-auto mb-md-0 mb-4 d-flex align-items-center justify-content-start md:justify-content-center">
+          <!-- Content -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active text-white" aria-current="page">Home</li>
+              <li class="breadcrumb-item active text-white" aria-current="page">Blog</li>
+              <li class="breadcrumb-item active text-white" aria-current="page">Sale</li>
+              <li class="breadcrumb-item active text-white" aria-current="page">About Us</li>
+            </ol>
+          </nav>
+        </div>
+ 
+        <div class="col-md-6  col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-1 text-white">
+            Contact Us
+          </h6>
+          <p>
+            <a href="#!" class="text-white text-decoration-none">+1 999 888-76-54</a>
+          </p>
+          <h6 class="text-uppercase fw-bold mb-1 text-white text-decoration-none">
+            Email 
+          </h6>
+          <p>
+            <a href="#!" class="text-white text-decoration-none">hello@logoipsum.com</a>
+          </p>
+          
+        </div>
+
+
+        <div class="col-md-6  col-xl-4 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-1 text-white">
+            Address
+          </h6>
+          <p>
+            <a href="#!" class="text-white text-decoration-none">2118 Thornridge Cir. Syracuse, Connecticut 35624</a>
+          </p>
+          <h6 class="text-uppercase fw-bold mb-1 text-white text-decoration-none">
+            Opening hours
+          </h6>
+          <p>
+            <a href="#!" class="text-white text-decoration-none">9am—6pm</a>
+          </p>
+          
+        </div>
+
+        <div class="col-md-12 col-xl-2 mx-auto mb-md-0 mb-4 d-flex align-items-end justify-content-end">
+        <p><a href="#" class="text-white text-decoration-none">© 2023 — Copyright</a></p> 
+         
+      </div>
+
+    </div>
+    
+    </div>
+  </section>
+
+</footer>
 </body>
+
 </html>

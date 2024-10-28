@@ -3,6 +3,7 @@
 @import './scss/utils/mixins';
 @import './scss/components/buttons';
 @import './scss/layout/main';
+@import './scss/layout/footer';
 
 #productGrid .product-card {
     flex: 1 1 200px; /* Allows each card to grow and shrink */

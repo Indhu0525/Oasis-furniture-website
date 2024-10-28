@@ -47,6 +47,9 @@
   color: #000000;
   font-weight: 300;
 }
+.main-text .categories {
+  /* For small screens (up to 576px), make the product card take full width */
+}
 .main-text .categories h4 {
   font-size: 30px;
   color: #2E2F33;
@@ -95,6 +98,26 @@
   padding: 2px 4px;
   top: 8px;
   left: 91%;
+}
+.main-text .categories .button5 {
+  background-color: #F8F7FB;
+}
+.main-text .categories #productGrid .product-card {
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+@media (max-width: 576px) {
+  .main-text .categories #productGrid .product-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.footer {
+  background-color: #101010;
+}
+.footer .breadcrumb-item + .breadcrumb-item::before {
+  color: white;
 }
 
 #productGrid .product-card {

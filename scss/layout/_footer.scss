@@ -1,0 +1,10 @@
+@import '../themes/colors';
+@import '../utils/mixins';
+@import '../components/buttons';
+
+.footer{
+    background-color: $footer-bg;
+    .breadcrumb-item + .breadcrumb-item::before {
+        color: white; 
+      }
+}
