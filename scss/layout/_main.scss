@@ -4,20 +4,20 @@
 
 .main-text{
     p{
-        @include fs-color-fw($size:14px,$colorr:#000000,$fw:500);
+        @include fs-color-fw($size:14px,$colorr:$nav-text,$fw:500);
     }
     h2{
-        @include fs-color-fw($size:40px,$colorr:#000000,$fw:700);
+        @include fs-color-fw($size:40px,$colorr:$nav-text,$fw:700);
     }
   h6{
-    @include fs-color-fw($size:18px,$colorr:#000000,$fw:300);
+    @include fs-color-fw($size:18px,$colorr:$nav-text,$fw:300);
   }
   .categories{
         h4{
             @include fs-color-fw($size:30px,$colorr:$nav-text,$fw:700);
         }
         .containers{
-            background-color: $cart-bg;
+            background-color: $containers-bg;
         }
         .button3{
             @include button3;
@@ -33,6 +33,10 @@
         }
         .button5{
          background-color: $cart-bg;
+         &:hover{
+            background-color: $button-background;
+            color:white;
+         }
         }
         #productGrid .product-card {
             flex: 1 1 200px;
@@ -46,5 +50,11 @@
                 max-width: 100%;
             }
         }
+        .accordion {
+            background-color: transparent !important; 
+            .accordion-item {
+              background-color: transparent !important; 
+            }
+          }
   }
 }

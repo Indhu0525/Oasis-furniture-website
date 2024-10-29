@@ -5,6 +5,10 @@
 @import './scss/layout/main';
 @import './scss/layout/footer';
 
+body{
+  // background-color: #afd9e9 !important;
+  background-color: rgba(224, 234, 242, 1) !important;
+}
 #productGrid .product-card {
     flex: 1 1 200px; /* Allows each card to grow and shrink */
     max-width: 220px; /* Sets a max width for larger screens */

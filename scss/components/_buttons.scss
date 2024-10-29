@@ -3,12 +3,10 @@
 
 
 @mixin button {
-    background-color: $cart-bg;
+    background-color:  $button-background;
+    color:white;
     cursor: pointer;
     @include center-flex;
-    // &:hover {
-    //   background-color: darken($primary-color, 10%);
-    // }
     span {
         font-size: 0.7rem;
         padding: 2px 4px;
@@ -19,13 +17,10 @@
 
 @mixin button2 {
     @include button;
-    background-color: $get-startedbg;
     color: $white-bg;
 }
 @mixin button4 {
-    @include button2;
-    background-color: $get-startedbg;
-    color: $white-bg;
+    @include button;
 }
 @mixin button3{
     @include button2;
