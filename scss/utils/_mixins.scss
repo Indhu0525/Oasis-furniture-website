@@ -7,6 +7,12 @@
   color:$colorr;
   font-weight: $fw;
 }
+@mixin fs-color-fw-lheight($size:18px,$colorr:#000000,$fw:300,$lh:1.5){
+  font-size:$size;
+  color:$colorr;
+  font-weight: $fw;
+  line-height: $lh;
+}
  @mixin center-flex {
   display: flex;
   justify-content: center;

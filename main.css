@@ -1,5 +1,5 @@
 .header .nav .nav-item .nav-link {
-  color: #1c2227;
+  color: #203f50;
   font-size: 14px;
   font-weight: 500;
 }
@@ -35,17 +35,17 @@
 
 .main-text p {
   font-size: 14px;
-  color: #1c2227;
+  color: #203f50;
   font-weight: 500;
 }
 .main-text h2 {
   font-size: 40px;
-  color: #1c2227;
+  color: #203f50;
   font-weight: 700;
 }
 .main-text h6 {
   font-size: 18px;
-  color: #1c2227;
+  color: #203f50;
   font-weight: 300;
 }
 .main-text .categories {
@@ -53,7 +53,7 @@
 }
 .main-text .categories h4 {
   font-size: 30px;
-  color: #1c2227;
+  color: #203f50;
   font-weight: 700;
 }
 .main-text .categories .containers, .main-text .categories .container2 {
@@ -126,6 +126,29 @@
 }
 .footer .breadcrumb-item + .breadcrumb-item::before {
   color: white;
+}
+
+.main-text .headline {
+  font-size: 56px;
+  color: #203f50;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.main-text p {
+  font-size: 18px;
+  color: #203f50;
+  font-weight: 400;
+}
+.main-text .form-control {
+  background-color: #edf3f7;
+}
+.main-text .input-group .btn {
+  background-color: #426578;
+}
+.main-text h6 {
+  font-size: 18px;
+  color: #203f50;
+  font-weight: 600;
 }
 
 body {
