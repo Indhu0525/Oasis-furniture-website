@@ -129,10 +129,18 @@
 }
 
 .main-text .headline {
-  font-size: 56px;
+  font-size: 30px;
   color: #203f50;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.3;
+}
+@media (max-width: 475px) {
+  .main-text .headline {
+    font-size: 24px;
+    color: #203f50;
+    font-weight: 600;
+    line-height: 1.2;
+  }
 }
 .main-text p {
   font-size: 18px;
@@ -150,9 +158,18 @@
   color: #203f50;
   font-weight: 600;
 }
+.main-text .overlay-box {
+  background-color: #bee5f0;
+  top: 5.5rem;
+}
+.main-text .overlay-box2 {
+  background-color: #bee5f0;
+  top: 44%;
+}
 
-body {
+html, body {
   background-color: rgb(224, 234, 242) !important;
+  height: 100%;
 }
 
 #productGrid .product-card {

@@ -6,9 +6,10 @@
 @import './scss/layout/footer';
 @import './scss/pages/home';
 
-body{
+html,body{
   // background-color: #afd9e9 !important;
   background-color: rgba(224, 234, 242, 1) !important;
+  height :100%
 }
 #productGrid .product-card {
     flex: 1 1 200px; /* Allows each card to grow and shrink */

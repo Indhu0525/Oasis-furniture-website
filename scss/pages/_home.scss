@@ -1,9 +1,14 @@
 @import '../themes/colors';
 @import '../utils/mixins';
 @import '../components/buttons';
+
 .main-text{
     .headline{
-        @include fs-color-fw-lheight($size:56px,$colorr:$nav-text,$fw:600,$lh:1.3);
+        @include fs-color-fw-lheight($size:30px,$colorr:$nav-text,$fw:700,$lh:1.3);
+        @media (max-width: 475px) {
+            @include fs-color-fw-lheight($size: 24px, $colorr: $nav-text, $fw: 600, $lh: 1.2); // Smaller font size
+        }
+        
     }
     p{
         @include fs-color-fw($size:18px,$colorr:$nav-text,$fw:400);
@@ -16,5 +21,13 @@
     }
     h6{
         @include fs-color-fw($size:18px,$colorr:$nav-text,$fw:600);
+    }
+    .overlay-box{
+        background-color: $button-bg;
+      top:5.5rem;
+    }
+    .overlay-box2{
+        background-color: $button-bg;
+      top:44%;
     }
 }
