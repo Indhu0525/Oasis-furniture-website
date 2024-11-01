@@ -18,4 +18,11 @@
 .button2{
     @include button2;
 }
+.offcanvas{
+    --bs-offcanvas-width: 600px;
+    background-color: rgba(224, 234, 242, 1) !important;
+    .form-control{
+        @include  input-padding($padding-t:1.375rem,$padding-b:1.375rem,$padding-l:0.75rem,$padding-r:0.75rem,)
+    }
+}
 }

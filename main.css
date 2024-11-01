@@ -32,6 +32,16 @@
   top: 8px;
   left: 91%;
 }
+.header .offcanvas {
+  --bs-offcanvas-width: 600px;
+  background-color: rgb(224, 234, 242) !important;
+}
+.header .offcanvas .form-control {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 1.375rem;
+  padding-bottom: 1.375rem;
+}
 
 .main-text p {
   font-size: 14px;
@@ -189,7 +199,7 @@ html, body {
   margin-right: 10px !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .main {
     margin-left: 5rem !important;
     margin-right: 5rem !important;

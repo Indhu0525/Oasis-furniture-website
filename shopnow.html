@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>furniture-website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="./main.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts/dist/apexcharts.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+  <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../Oasis-furniture-website/products.js" rel="">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main mx-20 mx-md-10 mx-lg-20">
+    <header>
+      <div class="header d-flex justify-content-between align-items-center py-7">
+        <div class="header-text">
+          <img src="./images/Oasis.png">
+        </div>
+        <div class="d-none d-md-block " id="navbarToggleExternalContent">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="./home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-between align-items-center gap-3">
+          <button type="button" class="button p-3 position-relative rounded-circle">
+            <!-- <img src="./images/cart.png"> -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF">
+              <path d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z"/></svg>
+            <span class="position-absolute translate-middle badge rounded-pill bg-danger">3</span>
+          </button>
+          <button type="button" class="d-none d-md-flex button2 px-4 py-3 rounded-pill font-medium gap-3"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            Get Started!
+            <img src="./images/arrow-right.png">
+          </button>
+          <button class="navbar-toggler border-0 d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12.5A.5.5 0 0 1 3 12h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 8h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 4h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </button>
+  <!-- Offcanvas element -->
+<!-- Offcanvas element -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header d-flex align-items-center">
+    <button type="button" class="btn-close m-0 p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="mx-auto">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Login</h5>
+    </div>
+  </div>
+  <div class="offcanvas-body">
+    
+
+    <!-- Login Form -->
+    <div id="loginForm">
+      <div class="d-flex justify-content-center">
+        <img src="./images/Squircle.png" alt="Logo">
+      </div>
+      <form>
+        <h5 class="offcanvas-title d-flex justify-content-center">Welcome Back</h5>
+        <div class=" mx-24">
+        <div class="form-group mt-3">
+          <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Hello@exam">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control rounded-pill" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <a href="#" class="text-decoration-none d-flex justify-content-end mb-3 text-success-emphasis text-sm"id="showForgotPassword">Forgot Password?</a>
+        <button type="button" class="w-full button2 px-4 py-3 rounded-pill font-medium gap-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          Login
+        </button>
+        <div class="w-full">
+          <div class="d-flex align-items-center mt-5">
+            <div class="border-top border-black w-40"></div>
+            <h6 class="mx-3 text-uppercase text-muted">OR</h6>
+            <div class="border-top border-black w-40"></div>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <button type="button" class="btn btn-light w-100 rounded-pill d-flex align-items-center justify-content-center">
+            <img src="./images/google_logo.png" alt="Google" class="mr-2 w-4">
+            Continue with Google
+          </button>
+        </div>
+        <div class="form-group mt-3">
+          <button type="button" class="btn btn-light w-100 rounded-pill d-flex align-items-center justify-content-center">
+            <img src="./images/apple_logo.png" alt="Apple" class="mr-2 w-4">
+            Continue with Apple
+          </button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">First time here? 
+          <a href="#" class="pl-2 text-decoration-none text-success-emphasis text-sm" id="showCreateAccount">Create an Account</a>
+        </div>
+      </div>
+      </form>
+    </div>
+
+    <!-- Create Account Form -->
+    <div id="createAccountForm" style="display: none;">
+      <div class="d-flex justify-content-center">
+        <img src="./images/Squircle (1).png" alt="Logo">
+      </div>
+      <form>
+        <h5 class="offcanvas-title d-flex justify-content-center">Let's get your account set up</h5>
+        <div class=" mx-24">
+        <div class="form-group mt-3">
+          <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Hello@exam">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control rounded-pill" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="button" class="w-full button2 px-4 py-3 rounded-pill font-medium gap-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          Create Account
+        </button>
+        <div class="form-group form-check my-5">
+          <input type="checkbox" class="form-check-input me-2" id="exampleCheck1">
+          <label class="form-check-label text-sm" for="exampleCheck1">I agree to the Terms and Conditions of Furniture and acknowledge the Privacy Policy</label>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">Already have an account?
+          <a href="#" class="pl-2 text-decoration-none text-success-emphasis text-sm" id="showCreateAccount"> Login</a>
+        </div>
+      </div>
+      </form>
+    </div>
+ <!-- Forgot Password Form -->
+<div id="forgotPasswordForm" style="display: none;">
+  <div class="d-flex justify-content-center">
+      <img src="./images/Squircle (2).png" alt="Logo">
+  </div>
+  <form class="mx-24">
+      <h5 class="offcanvas-title d-flex justify-content-center">Enter your email and we'll send a link to reset your password</h5>
+      <div >
+        <div class="form-group mt-3">
+          <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Hello@exam">
+        </div>
+        <button type="button" class="w-full button2 px-4 py-3 rounded-pill font-medium gap-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          Reset Password
+        </button>
+        <div class="d-flex justify-content-center align-items-center my-4">Remember your password? 
+          <a href="#" class="pl-2 text-decoration-none text-success-emphasis text-sm" id="showCreateAccount">Back to login</a>
+        </div>
+      </div>
+  </form>
+</div>
+  </div>
+</div>
+<!-- JavaScript to handle form switching -->
+<script src="createaccount.js"></script>
+<script src="forgot-pass.js"></script>
+  <!-- Bootstrap JS (for components like offcanvas) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
+      </div>
+      
+    </header>
+    <main>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active">Homepage</li>
+                <li class="breadcrumb-item active">Library</li>
+                <li class="breadcrumb-item active">Library</li>
+                <li class="breadcrumb-item active">Library</li>
+                <li class="breadcrumb-item active">Library</li>
+
+
+                <li class="breadcrumb-item active">Library</li>
+                <li class="breadcrumb-item active">Library</li>
+            </ol>
+          </nav>
+    </main>
+
+
+  </div>
+      <!-- Footer -->
+<footer class="footer text-center text-lg-start  text-muted">
+
+  <section class="">
+    <div class="container text-center text-md-start ">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-4 col-xl-3  mb-md-0 mb-4 d-flex align-items-center ">
+          <!-- Content -->
+           <div class="d-flex justify-content-center justify-content-lg-between p-4">
+    <img src="./images/Oasis (1).png">
+  </div> 
+        </div>
+    </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="container  text-center text-md-start ">
+  
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-12  col-xl-2 mx-auto mb-md-0 mb-4 d-flex align-items-center justify-content-start md:justify-content-center">
+          <!-- Content -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active text-white" aria-current="page">Home</li>
+              <li class="breadcrumb-item active text-white" aria-current="page">Blog</li>
+              <li class="breadcrumb-item active text-white" aria-current="page">Sale</li>
+              <li class="breadcrumb-item active text-white" aria-current="page">About Us</li>
+            </ol>
+          </nav>
+        </div>
+ 
+        <div class="col-md-6  col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-1 text-white">
+            Contact Us
+          </h6>
+          <p>
+            <a href="#!" class="text-white text-decoration-none">+1 999 888-76-54</a>
+          </p>
+          <h6 class="text-uppercase fw-bold mb-1 text-white text-decoration-none">
+            Email 
+          </h6>
+          <p>
+            <a href="#!" class="text-white text-decoration-none">hello@logoipsum.com</a>
+          </p>
+          
+        </div>
+
+
+        <div class="col-md-6  col-xl-4 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-1 text-white">
+            Address
+          </h6>
+          <p>
+            <a href="#!" class="text-white text-decoration-none">2118 Thornridge Cir. Syracuse, Connecticut 35624</a>
+          </p>
+          <h6 class="text-uppercase fw-bold mb-1 text-white text-decoration-none">
+            Opening hours
+          </h6>
+          <p>
+            <a href="#!" class="text-white text-decoration-none">9am—6pm</a>
+          </p>
+          
+        </div>
+
+        <div class="col-md-12 col-xl-2 mx-auto mb-md-0 mb-4 d-flex align-items-end justify-content-end">
+        <p><a href="#" class="text-white text-decoration-none">© 2023 — Copyright</a></p> 
+         
+      </div>
+
+    </div>
+    
+    </div>
+  </section>
+
+</footer>
+</body>
+
+</html>

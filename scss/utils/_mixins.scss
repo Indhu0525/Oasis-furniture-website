@@ -22,3 +22,10 @@
   padding-top:$padding-t;
   padding-bottom: $padding-b;
 }
+@mixin input-padding($padding-t:2rem,$padding-b:2rem,$padding-l:2rem,$padding-r:2rem,)
+{
+  padding-left: $padding-l;
+  padding-right: $padding-r;
+  padding-top: $padding-t;
+  padding-bottom: $padding-b;
+}

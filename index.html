@@ -50,7 +50,7 @@
               <path d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z"/></svg>
             <span class="position-absolute translate-middle badge rounded-pill bg-danger">3</span>
           </button>
-          <button type="button" class="d-none d-md-flex button2 px-4 py-3 rounded-pill font-medium gap-3">
+          <button type="button" class="d-none d-md-flex button2 px-4 py-3 rounded-pill font-medium gap-3"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
             Get Started!
             <img src="./images/arrow-right.png">
           </button>
@@ -59,6 +59,116 @@
               <path fill-rule="evenodd" d="M2.5 12.5A.5.5 0 0 1 3 12h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 8h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 4h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
           </button>
+  <!-- Offcanvas element -->
+<!-- Offcanvas element -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header d-flex align-items-center">
+    <button type="button" class="btn-close m-0 p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="mx-auto">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Login</h5>
+    </div>
+  </div>
+  <div class="offcanvas-body">
+    
+
+    <!-- Login Form -->
+    <div id="loginForm">
+      <div class="d-flex justify-content-center">
+        <img src="./images/Squircle.png" alt="Logo">
+      </div>
+      <form>
+        <h5 class="offcanvas-title d-flex justify-content-center">Welcome Back</h5>
+        <div class=" mx-24">
+        <div class="form-group mt-3">
+          <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Hello@exam">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control rounded-pill" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <a href="#" class="text-decoration-none d-flex justify-content-end mb-3 text-success-emphasis text-sm"id="showForgotPassword">Forgot Password?</a>
+        <button type="button" class="w-full button2 px-4 py-3 rounded-pill font-medium gap-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          Login
+        </button>
+        <div class="w-full">
+          <div class="d-flex align-items-center mt-5">
+            <div class="border-top border-black w-40"></div>
+            <h6 class="mx-3 text-uppercase text-muted">OR</h6>
+            <div class="border-top border-black w-40"></div>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <button type="button" class="btn btn-light w-100 rounded-pill d-flex align-items-center justify-content-center">
+            <img src="./images/google_logo.png" alt="Google" class="mr-2 w-4">
+            Continue with Google
+          </button>
+        </div>
+        <div class="form-group mt-3">
+          <button type="button" class="btn btn-light w-100 rounded-pill d-flex align-items-center justify-content-center">
+            <img src="./images/apple_logo.png" alt="Apple" class="mr-2 w-4">
+            Continue with Apple
+          </button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">First time here? 
+          <a href="#" class="pl-2 text-decoration-none text-success-emphasis text-sm" id="showCreateAccount">Create an Account</a>
+        </div>
+      </div>
+      </form>
+    </div>
+
+    <!-- Create Account Form -->
+    <div id="createAccountForm" style="display: none;">
+      <div class="d-flex justify-content-center">
+        <img src="./images/Squircle (1).png" alt="Logo">
+      </div>
+      <form>
+        <h5 class="offcanvas-title d-flex justify-content-center">Let's get your account set up</h5>
+        <div class=" mx-24">
+        <div class="form-group mt-3">
+          <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Hello@exam">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control rounded-pill" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <button type="button" class="w-full button2 px-4 py-3 rounded-pill font-medium gap-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          Create Account
+        </button>
+        <div class="form-group form-check my-5">
+          <input type="checkbox" class="form-check-input me-2" id="exampleCheck1">
+          <label class="form-check-label text-sm" for="exampleCheck1">I agree to the Terms and Conditions of Furniture and acknowledge the Privacy Policy</label>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">Already have an account?
+          <a href="#" class="pl-2 text-decoration-none text-success-emphasis text-sm" id="showCreateAccount"> Login</a>
+        </div>
+      </div>
+      </form>
+    </div>
+ <!-- Forgot Password Form -->
+<div id="forgotPasswordForm" style="display: none;">
+  <div class="d-flex justify-content-center">
+      <img src="./images/Squircle (2).png" alt="Logo">
+  </div>
+  <form class="mx-24">
+      <h5 class="offcanvas-title d-flex justify-content-center">Enter your email and we'll send a link to reset your password</h5>
+      <div >
+        <div class="form-group mt-3">
+          <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Hello@exam">
+        </div>
+        <button type="button" class="w-full button2 px-4 py-3 rounded-pill font-medium gap-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          Reset Password
+        </button>
+        <div class="d-flex justify-content-center align-items-center my-4">Remember your password? 
+          <a href="#" class="pl-2 text-decoration-none text-success-emphasis text-sm" id="showCreateAccount">Back to login</a>
+        </div>
+      </div>
+  </form>
+</div>
+  </div>
+</div>
+<!-- JavaScript to handle form switching -->
+<script src="createaccount.js"></script>
+<script src="forgot-pass.js"></script>
+  <!-- Bootstrap JS (for components like offcanvas) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         </div>
       </div>
       
@@ -81,10 +191,11 @@
               <div class="col-md-4 d-flex flex-column align-items-center gap-10  justify-content-center">
                 <h4>Sitting Room</h4>
                 <button type="button"
-                  class="button3 px-4 py-3 rounded-pill font-medium gap-1 d-flex align-items-center">
-                  Shop Now
-                  <img src="./images/arrow-right -black.png" alt="Arrow Icon" class="ms-2">
-                </button>
+                class="button3 px-3 py-3 rounded-pill font-medium gap-1 d-flex align-items-center"
+                onclick="window.location.href='shopnow.html';">
+          Shop Now
+          <img src="./images/arrow-right -black.png" alt="Arrow Icon" class="ms-2">
+        </button>
               </div>
 
               <div class="col-md-8 ">
