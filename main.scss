@@ -7,11 +7,23 @@
 @import './scss/pages/home';
 
 html,body{
-  // background-color: #afd9e9 !important;
   background-color: rgba(224, 234, 242, 1) !important;
   height :100%
 }
 #productGrid .product-card {
     flex: 1 1 200px; /* Allows each card to grow and shrink */
     max-width: 220px; /* Sets a max width for larger screens */
+  }
+  .main {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    // overflow: hidden;
+  }
+  
+  @media (min-width: 768px) {
+    .main {
+      margin-left: 5rem !important;
+      margin-right: 5rem !important;
+
+    }
   }

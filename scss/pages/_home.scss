@@ -1,6 +1,19 @@
 @import '../themes/colors';
 @import '../utils/mixins';
 @import '../components/buttons';
+// .main {
+//     height: auto !important;
+
+//   @media (min-width: 992px) {
+//     .main {
+//       height: 100% !important;
+//     }
+//   }
+header{
+    height: 20%!important;
+}
+main{
+    height: 80% !important;
 
 .main-text{
     .headline{
@@ -31,3 +44,5 @@
       top:44%;
     }
 }
+}
+// }
