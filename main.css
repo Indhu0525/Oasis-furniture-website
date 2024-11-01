@@ -129,11 +129,11 @@
 }
 
 header {
-  height: 20% !important;
+  height: 10% !important;
 }
 
 main {
-  height: 80% !important;
+  height: 90% !important;
 }
 main .main-text .headline {
   font-size: 30px;
