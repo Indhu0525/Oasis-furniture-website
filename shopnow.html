@@ -44,10 +44,11 @@
           </ul>
         </div>
         <div class="d-flex justify-content-between align-items-center gap-3">
-        
-          <button type="button" class="button p-3 position-relative rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="showOrderConfirmation()">
+          <button type="button" class="button p-3 position-relative rounded-circle" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="showOrderConfirmation()">
             <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF">
-              <path d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z"/>
+              <path
+                d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
             </svg>
             <span class="position-absolute translate-middle badge rounded-pill bg-danger">3</span>
           </button>
@@ -55,338 +56,343 @@
             Get Started!
             <img src="./images/arrow-right.png">
           </button>
-          <button class="navbar-toggler border-0 d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12.5A.5.5 0 0 1 3 12h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 8h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 4h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          <button class="navbar-toggler border-0 d-flex d-md-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12.5A.5.5 0 0 1 3 12h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 8h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 4h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
           </button>
-  <!-- Offcanvas element -->
-<!-- Offcanvas element for Checkout -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header d-flex align-items-center">
-    <button type="button" class="btn-close m-0 p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    <div class="mx-auto">
-      <h5 class="offcanvas-title" id="offcanvasRightLabel">Checkout</h5>
-    </div>
-  </div>
-  <div class="offcanvas-body">
-    <!-- Checkout Form -->
-    <div id="loginForm">
-      <form>
-        <div class="mx-20">
-          <h5 class="offcanvas-title">Customer Information</h5>
-          <div class="d-flex align-items-center my-3">Have an account?
-            <a href="#" class="pl-2 text-decoration-none text-success-emphasis text-sm" id="showCreateAccount"> Login</a>
+          <!-- Offcanvas element -->
+          <!-- Offcanvas element for Checkout -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header d-flex align-items-center">
+              <button type="button" class="btn-close m-0 p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <div class="mx-auto">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Checkout</h5>
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <!-- Checkout Form -->
+              <div id="loginForm">
+                <form>
+                  <div class="mx-20">
+                    <h5 class="offcanvas-title">Customer Information</h5>
+                    <div class="d-flex align-items-center my-3">Have an account?
+                      <a href="#" class="pl-2 text-decoration-none text-success-emphasis text-sm"
+                        id="showCreateAccount"> Login</a>
+                    </div>
+                    <div class="form-group mt-3">
+                      <input type="email" class="form-control rounded-pill" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Hello@exam">
+                    </div>
+                    <div class="form-group">
+                      <h5 class="offcanvas-title">Shipping Address</h5>
+                      <input class="form-control rounded-pill my-3" placeholder="First Name">
+                      <input class="form-control rounded-pill my-3" placeholder="Last Name">
+                      <input class="form-control rounded-pill my-3" placeholder="Address">
+                      <div class="d-flex gap-3">
+                        <input class="form-control rounded-pill my-3" placeholder="City">
+                        <input class="form-control rounded-pill my-3" placeholder="Country">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <button type="button" class="w-full button2 px-4 py-2 font-medium gap-3 mt-3" id="proceedToPayment">
+              Proceed to Payment
+            </button>
           </div>
-          <div class="form-group mt-3">
-            <input type="email" class="form-control rounded-pill" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Hello@exam">
+          <!-- Payment Offcanvas -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasPayment"
+            aria-labelledby="offcanvasPaymentLabel">
+            <div class="offcanvas-header d-flex align-items-center">
+              <button type="button" class="btn-close m-0 p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <div class="mx-auto">
+                <h5 class="offcanvas-title" id="offcanvasPaymentLabel">Payment</h5>
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <!-- Payment Form -->
+              <form>
+                <div class="mx-24">
+                  <h5 class="offcanvas-title">Payment Information</h5>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control rounded-pill" placeholder="Card Number">
+                  </div>
+                  <div class="form-group d-flex gap-3">
+                    <input type="text" class="form-control rounded-pill my-3" placeholder="Expiry Date">
+                    <input type="text" class="form-control rounded-pill my-3" placeholder="CVV">
+                  </div>
+                  <input type="text" class="form-control rounded-pill" placeholder="Name on Card">
+                  <div class="form-group form-check my-3">
+                    <input type="checkbox" class="form-check-input me-2" id="exampleCheck1">
+                    <label class="form-check-label text-sm" for="exampleCheck1">Use shipping address as billing
+                      address</label>
+                  </div>
+                  <h5 class="offcanvas-title mt-5">Remember Me</h5>
+                  <div class="form-group form-check my-3">
+                    <input type="checkbox" class="form-check-input me-2" id="exampleCheck1">
+                    <label class="form-check-label text-sm" for="exampleCheck1">Save my information for faster
+                      checkout</label>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+            <button type="button" class="w-full button2 px-4 py-2 font-medium gap-3 mt-3" id="payNowButton">
+              Pay Now
+            </button>
           </div>
-          <div class="form-group">
-            <h5 class="offcanvas-title">Shipping Address</h5>
-            <input class="form-control rounded-pill my-3" placeholder="First Name">
-            <input class="form-control rounded-pill my-3" placeholder="Last Name">
-            <input class="form-control rounded-pill my-3" placeholder="Address">
-            <div class="d-flex gap-3">
-              <input class="form-control rounded-pill my-3" placeholder="City">
-              <input class="form-control rounded-pill my-3" placeholder="Country">
+          <!-- Offcanvas element for Order Confirmation -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasConfirmation"
+            aria-labelledby="offcanvasConfirmationLabel">
+            <div class="offcanvas-header d-flex align-items-center">
+              <button type="button" class="btn-close m-0 p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="d-flex justify-content-center">
+                <img src="./images/Squircle (3).png" alt="Logo">
+              </div>
+              <div class="margin">
+                <h5 class="offcanvas-title text-center my-4">Your Order is Confirmed!</h5>
+                <p class="text-center my-4">Thank you for shopping with us! Your beautiful new furniture is on its way
+                  and will be with you soon. Get ready to transform your space!</p>
+                <button type="button" class="w-full button2 px-4 py-3 rounded-pill font-medium gap-3 my-16"
+                  data-bs-dismiss="offcanvas">
+                  Done
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </form>
-    </div>
-
-  </div>
-    <button type="button" class="w-full button2 px-4 py-2 font-medium gap-3 mt-3" id="proceedToPayment">
-      Proceed to Payment
-    </button>
-</div>
-
-<!-- Payment Offcanvas -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasPayment" aria-labelledby="offcanvasPaymentLabel">
-  <div class="offcanvas-header d-flex align-items-center">
-    <button type="button" class="btn-close m-0 p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    <div class="mx-auto">
-      <h5 class="offcanvas-title" id="offcanvasPaymentLabel">Payment</h5>
-    </div>
-  </div>
-  <div class="offcanvas-body">
-    <!-- Payment Form -->
-    <form>
-      <div class="mx-24">
-        <h5 class="offcanvas-title">Payment Information</h5>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control rounded-pill" placeholder="Card Number">
-        </div>
-        <div class="form-group d-flex gap-3">
-          <input type="text" class="form-control rounded-pill my-3" placeholder="Expiry Date">
-          <input type="text" class="form-control rounded-pill my-3" placeholder="CVV">
-        </div>
-        <input type="text" class="form-control rounded-pill" placeholder="Name on Card">
-        <div class="form-group form-check my-3">
-          <input type="checkbox" class="form-check-input me-2" id="exampleCheck1">
-          <label class="form-check-label text-sm" for="exampleCheck1">Use shipping address as billing address</label>
-        </div>
-        <h5 class="offcanvas-title mt-5">Remember Me</h5>
-        <div class="form-group form-check my-3">
-          <input type="checkbox" class="form-check-input me-2" id="exampleCheck1">
-          <label class="form-check-label text-sm" for="exampleCheck1">Save my information for faster checkout</label>
+          <!-- JavaScript to handle form switching -->
+          <script src="createaccount.js"></script>
+          <script src="products.js"></script>
+          <script src="order-confirm.js"></script>
+          <!-- Bootstrap JS (for components like offcanvas) -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         </div>
       </div>
- 
-    </form>
-  </div>
-  <button type="button" class="w-full button2 px-4 py-2 font-medium gap-3 mt-3" id="payNowButton">
-    Pay Now
-  </button>
-</div>
-
-<!-- Offcanvas element for Order Confirmation -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasConfirmation" aria-labelledby="offcanvasConfirmationLabel">
-  <div class="offcanvas-header d-flex align-items-center">
-    <button type="button" class="btn-close m-0 p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
- 
-  </div>
-  <div class="offcanvas-body">
-    <div class="d-flex justify-content-center">
-      <img src="./images/Squircle (3).png" alt="Logo">
-    </div>
-    <div class="margin">
-      <h5 class="offcanvas-title text-center my-4">Your Order is Confirmed!</h5>
-      <p class="text-center my-4">Thank you for shopping with us! Your beautiful new furniture is on its way and will be with you soon. Get ready to transform your space!</p>
-      <button type="button" class="w-full button2 px-4 py-3 rounded-pill font-medium gap-3 my-16" data-bs-dismiss="offcanvas">
-        Done
-      </button>
-    </div>
-  </div>
-</div>
-
-<!-- JavaScript to handle form switching -->
-<script src="createaccount.js"></script>
-<script src="products.js"></script>
-<script src="order-confirm.js"></script>
-  <!-- Bootstrap JS (for components like offcanvas) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        </div>
-      </div>
-      
     </header>
     <main>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item active">Homepage</li>
-                <li class="breadcrumb-item active">Categories</li>
-                <li class="breadcrumb-item active">Sitting Room</li>
-                <li class="breadcrumb-item active">Luxe Armchair - Left Arm Chute</li>
-            </ol>
-        </nav>
-        <div class="mt-5 p-0">
-          <div class=" m-0 p-0">
-            <div class="row">
-              <div class="col-md-6 col-12 mb-4 mb-lg-0">
-                <img src="./images/catogories1.png" class="w-100 shadow-1-strong rounded mb-4" />
-                <img src="./images/catogories2.png" class="w-100 shadow-1-strong rounded mb-4" />
-                <img src="./images/image 1 (2).png" class="w-100 shadow-1-strong rounded mb-4" />
-              </div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active">Homepage</li>
+          <li class="breadcrumb-item active">Categories</li>
+          <li class="breadcrumb-item active">Sitting Room</li>
+          <li class="breadcrumb-item active">Luxe Armchair - Left Arm Chute</li>
+        </ol>
+      </nav>
+      <div class="mt-5 p-0">
+        <div class=" m-0 p-0">
+          <div class="row">
+            <div class="col-md-6 col-12 mb-4 mb-lg-0">
+              <img src="./images/catogories1.png" class="w-100 shadow-1-strong rounded mb-4" />
+              <img src="./images/catogories2.png" class="w-100 shadow-1-strong rounded mb-4" />
+              <img src="./images/image 1 (2).png" class="w-100 shadow-1-strong rounded mb-4" />
+            </div>
 
-              <div class="col-md-6 col-12  mb-4 mb-lg-0">
-                <div class="px-5 ">
-                    <h3 class="headline">Luxe Armchair - Left Arm Chute</h3>
-                    <div class="d-flex align-items-center mb-2">
-                      <span class="text-warning me-1">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-                      <span class="text-muted">4.8 stars</span>
+            <div class="col-md-6 col-12  mb-4 mb-lg-0">
+              <div class="px-5 ">
+                <h3 class="headline">Luxe Armchair - Left Arm Chute</h3>
+                <div class="d-flex align-items-center mb-2">
+                  <span class="text-warning me-1">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                  <span class="text-muted">4.8 stars</span>
+                </div>
+                <div class="mb-3">
+                  <span class=" headline">$899.00</span>
+                  <span class="line-through ms-2">$1999.00</span>
+                  <span class="discount-badge ms-2 px-2 py-1 rounded-pill">-40%</span>
+                </div>
+                <p class="">Ultra-functional and elegantly minimalist, our Luxe Armchair Collection draws inspiration
+                  from Nordic-style décor. It features a neutral color palette and natural wood accents, highlighted by
+                  uniquely designed hexagonal legs. </p>
+                <div class="d-flex justify-content-between my-4">
+                  <div class="d-flex gap-3">
+                    <div
+                      class="color-palatte1 rounded-md border border-secondary d-flex align-items-center justify-content-center">
+                      <i class="bi bi-check text-white"></i>
                     </div>
-                    <div class="mb-3">
-                      <span class=" headline">$899.00</span>
-                      <span class="line-through ms-2">$1999.00</span>
-                      <span class="discount-badge ms-2 px-2 py-1 rounded-pill">-40%</span>
+                    <div class="color-palatte2 rounded-md border border-secondary">
                     </div>
-                    <p class="">Ultra-functional and elegantly minimalist, our Luxe Armchair Collection draws inspiration from Nordic-style décor. It features a neutral color palette and natural wood accents, highlighted by uniquely designed hexagonal legs. </p>
-                    <div class="d-flex justify-content-between my-4">
-                      <div class="d-flex gap-3">
-                      <div class="color-palatte1 rounded-md border border-secondary d-flex align-items-center justify-content-center">
-                        <i class="bi bi-check text-white"></i>
-                      </div>
-                      <div class="color-palatte2 rounded-md border border-secondary">
-                      </div>
-                      <div class="color-palatte3 rounded-md border border-secondary">
-                      </div>
-                    </div>
-                      <input type="number" class="form-control text-center" style="width: 50px; height: 40px;" value="1" min="1">
-                    </div>
-               
-                    <button type="button" class="text-white w-full button2 px-4 py-2 rounded-pill font-medium gap-3">
-                      Buy Now
-                    </button>
-                
-                    <!-- Additional Info -->
-                    <div class="text-muted mt-5 d-flex flex-column gap-4">
-                      <div class="d-flex align-items-center gap-2">
-                        <img src="./images/Group (2).png" > Free shipping included
-                      </div>
-                      <div class="d-flex align-items-center gap-2">
-                        <img src="./images/Leaf.png">Made from the best of materials sourced
-                      </div>
+                    <div class="color-palatte3 rounded-md border border-secondary">
                     </div>
                   </div>
+                  <input type="number" class="form-control text-center" style="width: 50px; height: 40px;" value="1"
+                    min="1">
                 </div>
-                
-          
 
-     
+                <button type="button" class="text-white w-full button2 px-4 py-2 rounded-pill font-medium gap-3">
+                  Buy Now
+                </button>
 
-
+                <!-- Additional Info -->
+                <div class="text-muted mt-5 d-flex flex-column gap-4">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./images/Group (2).png"> Free shipping included
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./images/Leaf.png">Made from the best of materials sourced
+                  </div>
+                </div>
+              </div>
             </div>
+
+
+
+
+
+
           </div>
         </div>
-        <div class="categories my-12">
-          <h4>Categories</h4>
-          <div class="m-0 p-0">
-            <div class="d-flex flex-wrap justify-content-start" id="productGrid">
-              <div class="product-card p-2 ">
-                <div class="product">
-                  <img src="./images/leathersofa.png" alt="Product 1" class="img-fluid w-full">
-                  <div class="d-flex justify-content-between py-3 align-items-center">
-                    <p class="m-0">Faux Leather </p>
-                    <p class="m-0">$129</p>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card p-2 ">
-                <div class="product">
-                  <img src="./images/accentchair.png" alt="Product 2" class="img-fluid w-full">
-                  <div class="d-flex justify-content-between py-3 align-items-center">
-                    <p class="m-0">Boucle Accent Chair</p>
-                    <p class="m-0">$44</p>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card p-2">
-                <div class="product">
-                  <img src="./images/flowervase.png" alt="Product 3" class="img-fluid w-full">
-                  <div class="d-flex justify-content-between py-3 align-items-center">
-                    <p class="m-0">Ceramic Flower Vase</p>
-                    <p class="m-0">$8</p>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card p-2">
-                <div class="product">
-                  <img src="./images/fabricaccent.png" alt="Product 1" class="img-fluid w-full">
-                  <div class="d-flex justify-content-between py-3 align-items-center">
-                    <p class="m-0">Boucle Accent Chair</p>
-                    <p class="m-0">$44</p>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card p-2">
-                <div class="product">
-                  <img src="./images/woodenaccentchair.png" alt="Product 1" class="img-fluid w-full">
-                  <div class="d-flex justify-content-between py-3 align-items-center">
-                    <p class="m-0">Boucle Accent Chair</p>
-                    <p class="m-0">$44</p>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card p-2">
-                <div class="product">
-                  <img src="./images/ceramiclamp.png" alt="Product 1" class="img-fluid w-full" >
-                  <div class="d-flex justify-content-between py-3 align-items-center">
-                    <p class="m-0">Boucle Accent Chair</p>
-                    <p class="m-0">$44</p>
-                  </div>
-                </div>
-              </div>
-            
-              
-            </div>
-      
-          </div>
-          <script src="products.js"></script>
-        </div>
-    </main>
-
-
-  </div>
-      <!-- Footer -->
-<footer class="footer text-center text-lg-start  text-muted">
-
-  <section class="">
-    <div class="container text-center text-md-start ">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-4 col-xl-3  mb-md-0 mb-4 d-flex align-items-center ">
-          <!-- Content -->
-           <div class="d-flex justify-content-center justify-content-lg-between p-4">
-    <img src="./images/Oasis (1).png">
-  </div> 
-        </div>
-    </div>
-    </div>
-  </section>
-  <section class="">
-    <div class="container  text-center text-md-start ">
-  
-      <div class="row">
-        <!-- Grid column -->
-        <div class="col-md-12  col-xl-2 mx-auto mb-md-0 mb-4 d-flex align-items-center justify-content-start md:justify-content-center">
-          <!-- Content -->
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item active text-white" aria-current="page">Home</li>
-              <li class="breadcrumb-item active text-white" aria-current="page">Blog</li>
-              <li class="breadcrumb-item active text-white" aria-current="page">Sale</li>
-              <li class="breadcrumb-item active text-white" aria-current="page">About Us</li>
-            </ol>
-          </nav>
-        </div>
- 
-        <div class="col-md-6  col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-1 text-white">
-            Contact Us
-          </h6>
-          <p>
-            <a href="#!" class="text-white text-decoration-none">+1 999 888-76-54</a>
-          </p>
-          <h6 class="text-uppercase fw-bold mb-1 text-white text-decoration-none">
-            Email 
-          </h6>
-          <p>
-            <a href="#!" class="text-white text-decoration-none">hello@logoipsum.com</a>
-          </p>
-          
-        </div>
-
-
-        <div class="col-md-6  col-xl-4 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-1 text-white">
-            Address
-          </h6>
-          <p>
-            <a href="#!" class="text-white text-decoration-none">2118 Thornridge Cir. Syracuse, Connecticut 35624</a>
-          </p>
-          <h6 class="text-uppercase fw-bold mb-1 text-white text-decoration-none">
-            Opening hours
-          </h6>
-          <p>
-            <a href="#!" class="text-white text-decoration-none">9am—6pm</a>
-          </p>
-          
-        </div>
-
-        <div class="col-md-12 col-xl-2 mx-auto mb-md-0 mb-4 d-flex align-items-end justify-content-end">
-        <p><a href="#" class="text-white text-decoration-none">© 2023 — Copyright</a></p> 
-         
       </div>
+      <div class="categories my-12">
+        <h4>Categories</h4>
+        <div class="m-0 p-0">
+          <div class="d-flex flex-wrap justify-content-start" id="productGrid">
+            <div class="product-card p-2 ">
+              <div class="product">
+                <img src="./images/leathersofa.png" alt="Product 1" class="img-fluid w-full">
+                <div class="d-flex justify-content-between py-3 align-items-center">
+                  <p class="m-0">Faux Leather </p>
+                  <p class="m-0">$129</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-card p-2 ">
+              <div class="product">
+                <img src="./images/accentchair.png" alt="Product 2" class="img-fluid w-full">
+                <div class="d-flex justify-content-between py-3 align-items-center">
+                  <p class="m-0">Boucle Accent Chair</p>
+                  <p class="m-0">$44</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-card p-2">
+              <div class="product">
+                <img src="./images/flowervase.png" alt="Product 3" class="img-fluid w-full">
+                <div class="d-flex justify-content-between py-3 align-items-center">
+                  <p class="m-0">Ceramic Flower Vase</p>
+                  <p class="m-0">$8</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-card p-2">
+              <div class="product">
+                <img src="./images/fabricaccent.png" alt="Product 1" class="img-fluid w-full">
+                <div class="d-flex justify-content-between py-3 align-items-center">
+                  <p class="m-0">Boucle Accent Chair</p>
+                  <p class="m-0">$44</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-card p-2">
+              <div class="product">
+                <img src="./images/woodenaccentchair.png" alt="Product 1" class="img-fluid w-full">
+                <div class="d-flex justify-content-between py-3 align-items-center">
+                  <p class="m-0">Boucle Accent Chair</p>
+                  <p class="m-0">$44</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-card p-2">
+              <div class="product">
+                <img src="./images/ceramiclamp.png" alt="Product 1" class="img-fluid w-full">
+                <div class="d-flex justify-content-between py-3 align-items-center">
+                  <p class="m-0">Boucle Accent Chair</p>
+                  <p class="m-0">$44</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="products.js"></script>
+      </div>
+    </main>
+  </div>
+  <!-- Footer -->
+  <footer class="footer text-center text-lg-start  text-muted">
 
-    </div>
-    
-    </div>
-  </section>
+    <section class="">
+      <div class="container text-center text-md-start ">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-4 col-xl-3  mb-md-0 mb-4 d-flex align-items-center ">
+            <!-- Content -->
+            <div class="d-flex justify-content-center justify-content-lg-between p-4">
+              <img src="./images/Oasis (1).png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="">
+      <div class="container  text-center text-md-start ">
 
-</footer>
+        <div class="row">
+          <!-- Grid column -->
+          <div
+            class="col-md-12  col-xl-2 mx-auto mb-md-0 mb-4 d-flex align-items-center justify-content-start md:justify-content-center">
+            <!-- Content -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active text-white" aria-current="page">Home</li>
+                <li class="breadcrumb-item active text-white" aria-current="page">Blog</li>
+                <li class="breadcrumb-item active text-white" aria-current="page">Sale</li>
+                <li class="breadcrumb-item active text-white" aria-current="page">About Us</li>
+              </ol>
+            </nav>
+          </div>
+
+          <div class="col-md-6  col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-1 text-white">
+              Contact Us
+            </h6>
+            <p>
+              <a href="#!" class="text-white text-decoration-none">+1 999 888-76-54</a>
+            </p>
+            <h6 class="text-uppercase fw-bold mb-1 text-white text-decoration-none">
+              Email
+            </h6>
+            <p>
+              <a href="#!" class="text-white text-decoration-none">hello@logoipsum.com</a>
+            </p>
+
+          </div>
+
+
+          <div class="col-md-6  col-xl-4 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-1 text-white">
+              Address
+            </h6>
+            <p>
+              <a href="#!" class="text-white text-decoration-none">2118 Thornridge Cir. Syracuse, Connecticut 35624</a>
+            </p>
+            <h6 class="text-uppercase fw-bold mb-1 text-white text-decoration-none">
+              Opening hours
+            </h6>
+            <p>
+              <a href="#!" class="text-white text-decoration-none">9am—6pm</a>
+            </p>
+
+          </div>
+
+          <div class="col-md-12 col-xl-2 mx-auto mb-md-0 mb-4 d-flex align-items-end justify-content-end">
+            <p><a href="#" class="text-white text-decoration-none">© 2023 — Copyright</a></p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </footer>
 </body>
-
 </html>
