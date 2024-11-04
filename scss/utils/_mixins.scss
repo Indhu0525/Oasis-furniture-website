@@ -29,3 +29,9 @@
   padding-top: $padding-t;
   padding-bottom: $padding-b;
 }
+@mixin color-pallte($widthh: 40px, $heightt: 40px, $background-colorr: #a9a9a9, $cursorr: pointer){
+  width: $widthh;
+  height: $heightt;
+  background-color: $background-colorr;
+  cursor: $cursorr;
+}

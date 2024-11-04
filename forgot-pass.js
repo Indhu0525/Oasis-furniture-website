@@ -1,4 +1,4 @@
-// Event listener for "Forgot Password?" link
+// Event listener for "Forgot Password?" link (assumes this is in the login form)
 document.getElementById('showForgotPassword').addEventListener('click', function() {
     document.getElementById('loginForm').style.display = 'none';
     document.getElementById('createAccountForm').style.display = 'none';
