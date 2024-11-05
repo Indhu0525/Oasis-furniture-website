@@ -53,18 +53,39 @@
   color: #203f50;
   font-weight: 700;
 }
+@media (max-width: 767.98px) {
+  .main-text h2 {
+    font-size: 20px;
+    color: #203f50;
+    font-weight: 700;
+  }
+}
 .main-text h6 {
-  font-size: 18px;
+  font-size: 14px;
   color: #203f50;
   font-weight: 300;
+}
+@media (min-width: 767.98px) {
+  .main-text h6 {
+    font-size: 18px;
+    color: #203f50;
+    font-weight: 300;
+  }
 }
 .main-text .categories {
   /* For small screens (up to 576px), make the product card take full width */
 }
 .main-text .categories h4 {
-  font-size: 30px;
+  font-size: 20px;
   color: #203f50;
   font-weight: 700;
+}
+@media (min-width: 767.98px) {
+  .main-text .categories h4 {
+    font-size: 30px;
+    color: #203f50;
+    font-weight: 700;
+  }
 }
 .main-text .categories .containers, .main-text .categories .container2 {
   background-color: #f2f7fa;
@@ -171,9 +192,16 @@ main .main-text .input-group .btn {
   background-color: #426578;
 }
 main .main-text h6 {
-  font-size: 18px;
+  font-size: 14px;
   color: #203f50;
-  font-weight: 600;
+  font-weight: 300;
+}
+@media (min-width: 767.98px) {
+  main .main-text h6 {
+    font-size: 18px;
+    color: #203f50;
+    font-weight: 500;
+  }
 }
 main .main-text .overlay-box {
   background-color: #bee5f0;
@@ -190,6 +218,10 @@ header {
 
 main {
   height: 90% !important;
+  /* For small screens (up to 576px), make the product card take full width */
+  /* Medium screens (768px and up): Increase margin to 5rem */
+  /* Large screens (992px and up): Increase margin to 10rem */
+  /* Extra-large screens (1200px and up): Increase margin to 20rem */
 }
 main .headline {
   font-size: 30px;
@@ -235,6 +267,38 @@ main .color-palatte3 {
   background-color: #8395a7;
   cursor: pointer;
 }
+main #productGrid .product-card {
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+@media (max-width: 576px) {
+  main #productGrid .product-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+main .checkout-form {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+@media (min-width: 768px) {
+  main .checkout-form {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  main .checkout-form {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+@media (min-width: 1200px) {
+  main .checkout-form {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
 
 html, body {
   background-color: rgb(224, 234, 242) !important;
@@ -247,12 +311,30 @@ html, body {
 }
 
 .main {
-  margin-left: 10px !important;
-  margin-right: 10px !important;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 1024px) {
   .main {
+    margin-left: 5rem !important;
+    margin-right: 5rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .main {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
+}
+.checkout-form {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+
+/* Medium screens (768px and up): Increase margin to 5rem */
+@media (min-width: 768px) {
+  .checkout-form {
     margin-left: 5rem !important;
     margin-right: 5rem !important;
   }

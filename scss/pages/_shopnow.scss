@@ -2,6 +2,7 @@
 @import '../themes/colors';
 @import '../utils/mixins';
 @import '../components/buttons';
+
 // .main {
 //     height: auto !important;
 
@@ -47,4 +48,44 @@ main{
 .color-palatte3{
     @include color-pallte($widthh: 40px, $heightt: 40px, $background-colorr: #8395a7, $cursorr: pointer);
 }
+#productGrid .product-card {
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+/* For small screens (up to 576px), make the product card take full width */
+@media (max-width: 576px) {
+    #productGrid .product-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+.checkout-form {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+  
+  /* Medium screens (768px and up): Increase margin to 5rem */
+  @media (min-width: 768px) {
+    .checkout-form {
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+  }
+  
+  /* Large screens (992px and up): Increase margin to 10rem */
+  @media (min-width: 992px) {
+    .checkout-form {
+      margin-left: 10rem;
+      margin-right: 10rem;
+    }
+  }
+  
+  /* Extra-large screens (1200px and up): Increase margin to 20rem */
+  @media (min-width: 1200px) {
+    .checkout-form {
+      margin-left: 20rem;
+      margin-right: 20rem;
+    }
+  }
 }

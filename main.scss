@@ -16,15 +16,32 @@ html,body{
     max-width: 220px; /* Sets a max width for larger screens */
   }
   .main {
-    margin-left: 10px !important;
-    margin-right: 10px !important;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
   
   }
   
-  @media (min-width: 770px) {
+  @media (min-width: 1024px) {
     .main {
       margin-left: 5rem !important;
       margin-right: 5rem !important;
-      
+    }
+  }
+  @media (min-width: 768px) {
+    .main {
+      margin-left: 3rem !important;
+      margin-right: 3rem !important;
+    }
+  }
+  .checkout-form {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+  
+  /* Medium screens (768px and up): Increase margin to 5rem */
+  @media (min-width: 768px) {
+    .checkout-form {
+      margin-left: 5rem !important;
+      margin-right: 5rem !important;
     }
   }
