@@ -276,7 +276,7 @@
           <h4>Categories</h4>
           <div class="m-0 p-0">
             <div class="d-flex flex-wrap justify-content-start" id="productGrid">
-              <div class="product-card p-2 ">
+              <!-- <div class="product-card p-2 ">
                 <div class="product">
                   <img src="./images/leathersofa.png" alt="Product 1" class="img-fluid w-full">
                   <div class="d-flex justify-content-between py-3 align-items-center">
@@ -284,7 +284,35 @@
                     <p class="m-0">$129</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
+              <!-- Product Card -->
+<div class="product-card p-2">
+  <div class="product">
+    <!-- Image that triggers the modal -->
+    <img src="./images/leathersofa.png" alt="Product 1" class="img-fluid w-full" 
+         data-bs-toggle="modal" data-bs-target="#exampleModal">
+    
+    <div class="d-flex justify-content-between py-3 align-items-center">
+      <p class="m-0">Faux Leather Sofa Couch</p>
+      <p class="m-0">$129</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <!-- Add your modal content here -->
+        <h5>Faux Leather Sofa Couch</h5>
+        <p>Price: $129</p>
+        <p>Details: This stylish faux leather sofa is designed to provide comfort and elegance to your living space.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
               <div class="product-card p-2 ">
                 <div class="product">
                   <img src="./images/accentchair.png" alt="Product 2" class="img-fluid w-full">
