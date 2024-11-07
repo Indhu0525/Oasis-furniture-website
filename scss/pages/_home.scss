@@ -24,7 +24,7 @@ main{
         
     }
     p{
-        @include fs-color-fw($size:18px,$colorr:$nav-text,$fw:400);
+        @include fs-color-fw($size:14px,$colorr:$nav-text,$fw:400);
     }
     .form-control{
     background-color:$inputbg;

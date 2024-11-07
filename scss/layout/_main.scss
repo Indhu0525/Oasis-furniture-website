@@ -63,11 +63,50 @@
                 max-width: 100%;
             }
         }
-        .accordion {
-            background-color: transparent !important; 
-            .accordion-item {
-              background-color: transparent !important; 
-            }
-          }
   }
+
+.custom-modal-bg {
+    background: rgb(242, 247, 250,0.5); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurred effect */
+
+  }
+  .custom-width {
+    width: auto; /* Allows modal width to adjust based on content */
+    max-width: 100%; /* Default: takes full width on small screens */
+    
+    /* Apply max-width only for larger screens */
+    @media (min-width: 992px) {  /* Bootstrap's breakpoint for large screens (lg) */
+      max-width: 70vw;
+    }
+  }
+  .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Adjust the opacity/color as needed */
+    backdrop-filter: none !important; /* Disable any blur effect */
+}
+#accordion-item-four .accordion-button {
+    color: white !important;
+  }
+
+  #accordion-item-four .accordion-button:not(.collapsed) {
+    color: $nav-text !important; /* Bootstrap's primary blue color */
+  }
+.accordion-body-text{
+    @include fs-color-fw($size:15px,$colorr:$nav-text,$fw:500);
+}
+  #accordion-button-one::after {
+    display: none !important;
+  }
+  .accordion {
+    background-color: transparent !important; 
+    .accordion-item {
+      background-color: transparent !important; 
+    }
+  }
+  .custom-btn-wdth{
+    width: 8.79rem !important;
+  }
+  .rounded-right {
+    border-top-right-radius: 1.25rem !important;
+    border-bottom-right-radius: 1.25rem !important;
+}
 }

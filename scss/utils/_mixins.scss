@@ -2,7 +2,7 @@
   font-size: $size;
   font-weight:$fw;
  }
-@mixin fs-color-fw($size:18px,$colorr:#000000,$fw:300){
+@mixin fs-color-fw($size:14px,$colorr:#000000,$fw:300){
   font-size:$size;
   color:$colorr;
   font-weight: $fw;

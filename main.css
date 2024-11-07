@@ -145,11 +145,52 @@
     max-width: 100%;
   }
 }
-.main-text .categories .accordion {
+.main-text .custom-modal-bg {
+  background: rgba(242, 247, 250, 0.5); /* Semi-transparent background */
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* Blurred effect */
+}
+.main-text .custom-width {
+  width: auto; /* Allows modal width to adjust based on content */
+  max-width: 100%; /* Default: takes full width on small screens */
+  /* Apply max-width only for larger screens */
+}
+@media (min-width: 992px) {
+  .main-text .custom-width { /* Bootstrap's breakpoint for large screens (lg) */
+    max-width: 70vw;
+  }
+}
+.main-text .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Adjust the opacity/color as needed */
+  -webkit-backdrop-filter: none !important;
+          backdrop-filter: none !important; /* Disable any blur effect */
+}
+.main-text #accordion-item-four .accordion-button {
+  color: white !important;
+}
+.main-text #accordion-item-four .accordion-button:not(.collapsed) {
+  color: #203f50 !important; /* Bootstrap's primary blue color */
+}
+.main-text .accordion-body-text {
+  font-size: 15px;
+  color: #203f50;
+  font-weight: 500;
+}
+.main-text #accordion-button-one::after {
+  display: none !important;
+}
+.main-text .accordion {
   background-color: transparent !important;
 }
-.main-text .categories .accordion .accordion-item {
+.main-text .accordion .accordion-item {
   background-color: transparent !important;
+}
+.main-text .custom-btn-wdth {
+  width: 8.79rem !important;
+}
+.main-text .rounded-right {
+  border-top-right-radius: 1.25rem !important;
+  border-bottom-right-radius: 1.25rem !important;
 }
 
 .footer {
@@ -181,7 +222,7 @@ main .main-text .headline {
   }
 }
 main .main-text p {
-  font-size: 18px;
+  font-size: 14px;
   color: #203f50;
   font-weight: 400;
 }
